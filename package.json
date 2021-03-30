@@ -1,0 +1,14 @@
+{
+  "name": "cars_dot_com",
+  "version": "1.0.0",
+  "description": "Cars.com search and filter functionality tests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Francis Cancio",
+  "license": "MIT",
+  "dependencies": {
+    "selenium-webdriver": "^4.0.0-beta.2"
+  }
+}
