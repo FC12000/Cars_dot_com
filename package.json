@@ -1,14 +1,25 @@
 {
   "name": "cars_dot_com",
   "version": "1.0.0",
-  "description": "Cars.com search and filter functionality tests.",
-  "main": "index.js",
+  "description": "Cars.com search and filter tests",
+  "main": "test1.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test2.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FC12000/Cars_dot_com.git"
   },
   "author": "Francis Cancio",
-  "license": "MIT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FC12000/Cars_dot_com/issues"
+  },
+  "homepage": "https://github.com/FC12000/Cars_dot_com#readme",
   "dependencies": {
+    "chai": "^4.3.4",
+    "geckodriver": "^1.22.2",
+    "mocha": "^8.3.2",
     "selenium-webdriver": "^4.0.0-beta.2"
   }
 }
