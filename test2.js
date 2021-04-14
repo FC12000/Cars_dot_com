@@ -3,7 +3,8 @@ const { Builder, By, Key, until } = require('selenium-webdriver');
 const { expect } = require('chai');
 
   // Our test
-  describe('Test', function() {
+  //describe('Basic test to make sure things are working', function() {
+  describe('Basic test to make sure things are working', () => {
     // Get driver
     const driver = new Builder().forBrowser('firefox').
       build();
@@ -15,15 +16,22 @@ const { expect } = require('chai');
 
       // Go to URL
       await driver.get('http://the-internet.herokuapp.com');
-      await driver.sleep(2000);
+      await driver.sleep(5000);
 
       // Find the title and assert
+/*
+      // Selenium test
       await driver.executeScript('return document.title').
         then(function(return_value) {
-          assert.equal(return_value, 'The Internet')
+          assert.equal(return_value, 'The Internet');
         });
-
-      // Quit webdriver
-      after(async () => driver.quit());
+*/
+      // Chai version of the test above
+      const title = await driver.getTitle();
+      expect(title).to.equal('The Internet');
+      //done();
     });
+
+    // Quit webdriver
+    after(async () => driver.quit());
   });
