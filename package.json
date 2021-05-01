@@ -4,7 +4,8 @@
   "description": "Cars.com search and filter tests",
   "main": "test1.js",
   "scripts": {
-    "test": "mocha test2.js --timeout 10000"
+    "test": "mocha test2.js --timeout 10000",
+    "test1": "mocha test3.js --timeout 10000"
   },
   "repository": {
     "type": "git",
